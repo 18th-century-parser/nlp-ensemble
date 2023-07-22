@@ -9,7 +9,7 @@ pi_30 = math.pi / 30
 
 
 def similarity_scale(x: float, coefficient: int) -> float:
-    return min(max((x - pi_30) * coefficient, -1), 1)
+    return 0 if x == 0 else min(max((x - pi_30) * coefficient, -1), 1)
 
 
 class Paths:
